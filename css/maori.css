@@ -79,10 +79,6 @@ figure img {width: 100%;}
 	------------------
 */
 
-body{ 
-background:url("background.jpg") no-repeat scroll 0 0 transparent;
-}
-
 #wrapper { z-index:1; position:absolute;}
 
 #content{
