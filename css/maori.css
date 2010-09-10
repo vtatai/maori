@@ -79,9 +79,7 @@ figure img {width: 100%;}
 	------------------
 */
 
-body{ 
-background:url("background.jpg") no-repeat scroll 0 0 transparent;
-}
+#wrapper { z-index:1; position:absolute;}
 
 #content{
 -webkit-border-radius: 0 10px 10px 0;
@@ -122,3 +120,6 @@ z-index:3000;
 bottom:0;
 right:0;
 }
+
+#supersize { position:fixed; }
+#supersize img { height:100%; width:100%; position: absolute; z-index: 0; }
