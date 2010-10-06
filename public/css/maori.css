@@ -119,6 +119,7 @@ position:fixed;
 z-index:3000;
 bottom:0;
 right:0;
+opacity: 0.5;
 }
 
 #supersize { position:fixed; }
