@@ -1,0 +1,29 @@
+<% if flash[:notice] %>
+  <%= flash[:notice] %>
+<% end %>
+
+<% form_for(@box, :class => 'form-horizontal') do |f| %>
+  <fieldset>
+
+    <!-- Form Name -->
+    <legend>Box</legend>
+
+    <!-- Text input-->
+    <div class="control-group">
+      <label class="control-label" for="description">Description</label>
+      <div class="controls">
+        <%= f.text_area :description, :required => '', :rows => 5 %>
+      </div>
+    </div>
+
+    <!-- Button (Double) -->
+    <div class="control-group">
+      <label class="control-label" for="cancel"></label>
+      <div class="controls">
+        <%= link_to 'Back', move_boxes_path, :class => 'btn btn-inverse' %>
+        <%= f.submit 'Save', :class => 'btn btn-primary' %>
+      </div>
+    </div>
+
+  </fieldset>
+<% end %>

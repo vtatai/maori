@@ -1,5 +1,5 @@
 <h2>Boxes being Shipped</h2>
-<table class="items_datatable"> 
+<table class="datatable table table-striped table-bordered"> 
   <thead> 
     <tr> 
       <th>ID</th> 
@@ -9,10 +9,19 @@
   <tbody>
     <% @boxes.each do |box| %>
       <tr>
-        <td><%= box.id %></td>
+        <td><%= link_to box.id, move_box_path(box) %></td>
         <td><%= box.description %></td>
+        <td><%= link_to 'Edit', edit_move_box_path(box), :class => 'glyphicon glyphicon-edit' %></td>
       </tr>
     <% end %>
     <%= 'NO BOXES' if @boxes.empty? %>
   </tbody>
 </table>
+
+<%= link_to 'New Box', new_move_box_path, :class => 'btn btn-primary' %>
+
+<script language="javascript" type="text/javascript">
+  $(document).ready(function() {
+    $('.datatable').dataTable();
+  });
+</script> 
