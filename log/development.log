@@ -1,0 +1,717 @@
+# Logfile created on 2013-12-06 08:23:03 -0300  [4;36;1mSQL (6.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (16.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (142.7ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (3.2ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (129.1ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBoxes (20131206111445)
+  [4;36;1mSQL (37.8ms)[0m   [0;1mCREATE TABLE `boxes` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `description` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (2.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20131206111445')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (9.5ms)[0m   [0mSHOW FIELDS FROM `boxes`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mdescribe `boxes`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `boxes`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2013-12-06 08:34:27) [GET]
+
+LoadError (cannot load such file -- boxes_helper.rb):
+  app/controllers/move/boxes_controller.rb:1:in `<top (required)>'
+  <internal:prelude>:10:in `synchronize'
+  /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (11.1ms)
+Rendered rescues/_request_and_response (5.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2013-12-06 08:35:03) [GET]
+
+LoadError (Expected /Users/victor.tatai/src/maori/app/controllers/move/boxes_controller.rb to define Move::BoxesController):
+  <internal:prelude>:10:in `synchronize'
+  /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (7.7ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2013-12-06 08:35:43) [GET]
+
+LoadError (cannot load such file -- move/boxes_helper.rb):
+  app/controllers/move/boxes_controller.rb:2:in `<module:Move>'
+  app/controllers/move/boxes_controller.rb:1:in `<top (required)>'
+  <internal:prelude>:10:in `synchronize'
+  /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (21.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+/!\ FAILSAFE /!\  2013-12-06 08:36:08 -0300
+  Status: 500 Internal Server Error
+  Expected /Users/victor.tatai/src/maori/app/helpers/move/boxes_helper.rb to define Move::BoxesHelper
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:426:in `load_missing_constant'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:80:in `const_missing_with_dependencies'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/activesupport-2.3.8/lib/active_support/inflector.rb:375:in `const_get'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/activesupport-2.3.8/lib/active_support/inflector.rb:375:in `block in constantize'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/activesupport-2.3.8/lib/active_support/inflector.rb:374:in `each'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/activesupport-2.3.8/lib/active_support/inflector.rb:374:in `constantize'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/activesupport-2.3.8/lib/active_support/core_ext/string/inflections.rb:162:in `constantize'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/helpers.rb:137:in `block in helper'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/helpers.rb:115:in `each'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/helpers.rb:115:in `helper'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/helpers.rb:120:in `block in helper'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/helpers.rb:115:in `each'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/helpers.rb:115:in `helper'
+    /Users/victor.tatai/src/maori/app/controllers/application_controller.rb:5:in `<class:ApplicationController>'
+    /Users/victor.tatai/src/maori/app/controllers/application_controller.rb:4:in `<top (required)>'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `block in load_file'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:379:in `load_file'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:80:in `const_missing_with_dependencies'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:92:in `const_missing'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:89:in `rescue in dispatch'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:96:in `dispatch'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `block in build_middleware_stack'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `block in call'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/rack-1.1.6/lib/rack/head.rb:9:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/rack-1.1.6/lib/rack/methodoverride.rb:24:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/rack-1.1.6/lib/rack/lock.rb:11:in `block in call'
+    <internal:prelude>:10:in `synchronize'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/rack-1.1.6/lib/rack/lock.rb:11:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `block in call'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/rack-1.1.6/lib/rack/urlmap.rb:47:in `block in call'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/rack-1.1.6/lib/rack/urlmap.rb:41:in `each'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/rack-1.1.6/lib/rack/urlmap.rb:41:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/rack-1.1.6/lib/rack/content_length.rb:13:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/rack-1.1.6/lib/rack/handler/webrick.rb:48:in `service'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+/!\ FAILSAFE /!\  2013-12-06 08:36:34 -0300
+  Status: 500 Internal Server Error
+  Expected /Users/victor.tatai/src/maori/app/helpers/move/boxes_helper.rb to define Move::BoxesHelper
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:426:in `load_missing_constant'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:80:in `const_missing_with_dependencies'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/activesupport-2.3.8/lib/active_support/inflector.rb:375:in `const_get'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/activesupport-2.3.8/lib/active_support/inflector.rb:375:in `block in constantize'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/activesupport-2.3.8/lib/active_support/inflector.rb:374:in `each'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/activesupport-2.3.8/lib/active_support/inflector.rb:374:in `constantize'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/activesupport-2.3.8/lib/active_support/core_ext/string/inflections.rb:162:in `constantize'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/helpers.rb:137:in `block in helper'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/helpers.rb:115:in `each'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/helpers.rb:115:in `helper'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/helpers.rb:120:in `block in helper'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/helpers.rb:115:in `each'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/helpers.rb:115:in `helper'
+    /Users/victor.tatai/src/maori/app/controllers/application_controller.rb:5:in `<class:ApplicationController>'
+    /Users/victor.tatai/src/maori/app/controllers/application_controller.rb:4:in `<top (required)>'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `block in load_file'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:379:in `load_file'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:80:in `const_missing_with_dependencies'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:92:in `const_missing'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:89:in `rescue in dispatch'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:96:in `dispatch'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `block in build_middleware_stack'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `block in call'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/rack-1.1.6/lib/rack/head.rb:9:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/rack-1.1.6/lib/rack/methodoverride.rb:24:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/rack-1.1.6/lib/rack/lock.rb:11:in `block in call'
+    <internal:prelude>:10:in `synchronize'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/rack-1.1.6/lib/rack/lock.rb:11:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `block in call'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/rack-1.1.6/lib/rack/urlmap.rb:47:in `block in call'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/rack-1.1.6/lib/rack/urlmap.rb:41:in `each'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/rack-1.1.6/lib/rack/urlmap.rb:41:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/rack-1.1.6/lib/rack/content_length.rb:13:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/rack-1.1.6/lib/rack/handler/webrick.rb:48:in `service'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+    /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Move::BoxesController#index (for 127.0.0.1 at 2013-12-06 08:37:03) [GET]
+  [4;36;1mMove::Box Load (0.3ms)[0m   [0;1mSELECT * FROM `boxes` [0m
+
+ActionView::MissingTemplate (Missing template move/boxes/index.erb in view path /Users/victor.tatai/src/maori/app/views):
+  <internal:prelude>:10:in `synchronize'
+  /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Move::BoxesController#index (for 127.0.0.1 at 2013-12-06 08:37:54) [GET]
+  [4;35;1mMove::Box Load (0.2ms)[0m   [0mSELECT * FROM `boxes` [0m
+
+Psych::SyntaxError ((<unknown>): did not find expected node content while parsing a flow node at line 18 column 14):
+  /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/psych.rb:203:in `parse'
+  /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/psych.rb:203:in `parse_stream'
+  /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/psych.rb:151:in `parse'
+  /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/psych.rb:127:in `load'
+  <internal:prelude>:10:in `synchronize'
+  /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (15.9ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Move::BoxesController#index (for 127.0.0.1 at 2013-12-06 08:38:03) [GET]
+  [4;36;1mMove::Box Load (0.2ms)[0m   [0;1mSELECT * FROM `boxes` [0m
+
+Psych::SyntaxError ((<unknown>): did not find expected node content while parsing a flow node at line 18 column 14):
+  /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/psych.rb:203:in `parse'
+  /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/psych.rb:203:in `parse_stream'
+  /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/psych.rb:151:in `parse'
+  /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/psych.rb:127:in `load'
+  <internal:prelude>:10:in `synchronize'
+  /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/victor.tatai/.rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (25.0ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+/!\ FAILSAFE /!\  Fri Dec 06 08:48:57 -0300 2013
+  Status: 500 Internal Server Error
+  no such file to load -- mysql
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:36:in `gem_original_require'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:36:in `require'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:156:in `require'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:156:in `require'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/kernel/requires.rb:7:in `require_library_or_gem'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:61:in `mysql_connection'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/head.rb:9:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/methodoverride.rb:24:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/lock.rb:11:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/lock.rb:11:in `synchronize'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/lock.rb:11:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/urlmap.rb:47:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/urlmap.rb:41:in `each'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/urlmap.rb:41:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/content_length.rb:13:in `call'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/handler/webrick.rb:48:in `service'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/handler/webrick.rb:14:in `run'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:36:in `gem_original_require'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:36:in `require'
+    script/server:3
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Move::BoxesController#index (for 127.0.0.1 at 2013-12-06 08:50:16) [GET]
+  [4;36;1mMove::Box Load (0.3ms)[0m   [0;1mSELECT * FROM `boxes` [0m
+Rendering move/boxes/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/move/boxes]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Move::BoxesController#index (for 127.0.0.1 at 2013-12-06 08:53:48) [GET]
+  [4;35;1mMove::Box Load (0.2ms)[0m   [0mSELECT * FROM `boxes` [0m
+Rendering move/boxes/index
+Completed in 3ms (View: 0, DB: 0) | 200 OK [http://localhost/move/boxes]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Move::BoxesController#index (for 127.0.0.1 at 2013-12-06 08:54:20) [GET]
+  [4;36;1mMove::Box Load (0.2ms)[0m   [0;1mSELECT * FROM `boxes` [0m
+Rendering move/boxes/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/move/boxes]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Move::BoxesController#index (for 127.0.0.1 at 2013-12-06 08:59:47) [GET]
+  [4;35;1mMove::Box Load (0.2ms)[0m   [0mSELECT * FROM `boxes` [0m
+Rendering move/boxes/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://localhost/move/boxes]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Move::BoxesController#index (for 127.0.0.1 at 2013-12-06 08:59:48) [GET]
+  [4;36;1mMove::Box Load (0.2ms)[0m   [0;1mSELECT * FROM `boxes` [0m
+Rendering move/boxes/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://localhost/move/boxes]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2013-12-06 09:00:41) [GET]
+
+NoMethodError (undefined method `render' for Move::BoxesController:Class):
+  app/controllers/move/boxes_controller.rb:3
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (22.0ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Move::BoxesController#index (for 127.0.0.1 at 2013-12-06 09:01:43) [GET]
+  [4;35;1mMove::Box Load (0.2ms)[0m   [0mSELECT * FROM `boxes` [0m
+Rendering template within layouts/application
+Rendering move/boxes/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/move/boxes]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2013-12-06 09:01:43) [GET]
+
+ActionController::RoutingError (No route matches "/move/css/bootstrap.min.css" with {:method=>:get}):
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2013-12-06 09:01:43) [GET]
+
+ActionController::RoutingError (No route matches "/move/js/bootstrap.min.js" with {:method=>:get}):
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2013-12-06 09:01:45) [GET]
+
+ActionController::RoutingError (No route matches "/move/js/bootstrap.min.js" with {:method=>:get}):
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Move::BoxesController#index (for 127.0.0.1 at 2013-12-06 09:03:19) [GET]
+  [4;36;1mMove::Box Load (0.2ms)[0m   [0;1mSELECT * FROM `boxes` [0m
+Rendering move/boxes/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://localhost/move/boxes]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Move::BoxesController#index (for 127.0.0.1 at 2013-12-06 09:03:20) [GET]
+  [4;35;1mMove::Box Load (0.3ms)[0m   [0mSELECT * FROM `boxes` [0m
+Rendering move/boxes/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://localhost/move/boxes]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Move::BoxesController#index (for 127.0.0.1 at 2013-12-06 09:03:22) [GET]
+  [4;36;1mMove::Box Load (0.2ms)[0m   [0;1mSELECT * FROM `boxes` [0m
+Rendering move/boxes/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://localhost/move/boxes]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Move::BoxesController#index (for 127.0.0.1 at 2013-12-06 09:04:01) [GET]
+  [4;35;1mMove::Box Load (0.2ms)[0m   [0mSELECT * FROM `boxes` [0m
+
+NoMethodError (undefined method `default' for #<Move::BoxesController:0x10eac3708>):
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (26.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Move::BoxesController#index (for 127.0.0.1 at 2013-12-06 09:04:47) [GET]
+  [4;36;1mMove::Box Load (0.2ms)[0m   [0;1mSELECT * FROM `boxes` [0m
+Rendering move/boxes/index
+
+ActionView::TemplateError (undefined method `layout' for #<ActionView::Base:0x10eefcae0>) on line #1 of app/views/move/boxes/index.html.erb:
+1: <% layout :default %>
+2: yikes!
+
+    app/views/move/boxes/index.html.erb:1
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (27.3ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Move::BoxesController#index (for 127.0.0.1 at 2013-12-06 09:06:17) [GET]
+  [4;35;1mMove::Box Load (0.2ms)[0m   [0mSELECT * FROM `boxes` [0m
+Rendering move/boxes/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/move/boxes]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Move::BoxesController#index (for 127.0.0.1 at 2013-12-06 09:09:56) [GET]
+  [4;36;1mMove::Box Load (0.2ms)[0m   [0;1mSELECT * FROM `boxes` [0m
+Rendering template within layouts/application
+Rendering move/boxes/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/move/boxes]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2013-12-06 09:09:57) [GET]
+
+ActionController::RoutingError (No route matches "/move/css/bootstrap.min.css" with {:method=>:get}):
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2013-12-06 09:09:57) [GET]
+
+ActionController::RoutingError (No route matches "/move/js/bootstrap.min.js" with {:method=>:get}):
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2013-12-06 09:09:57) [GET]
+
+ActionController::RoutingError (No route matches "/move/js/bootstrap.min.js" with {:method=>:get}):
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Move::BoxesController#index (for 127.0.0.1 at 2013-12-06 09:11:39) [GET]
+  [4;35;1mMove::Box Load (0.2ms)[0m   [0mSELECT * FROM `boxes` [0m
+Rendering template within layouts/application
+Rendering move/boxes/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/move/boxes]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2013-12-06 09:11:39) [GET]
+
+ActionController::RoutingError (No route matches "/move/css/bootstrap.min.css" with {:method=>:get}):
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2013-12-06 09:11:39) [GET]
+
+ActionController::RoutingError (No route matches "/move/js/bootstrap.min.js" with {:method=>:get}):
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2013-12-06 09:11:39) [GET]
+
+ActionController::RoutingError (No route matches "/move/js/bootstrap.min.js" with {:method=>:get}):
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/victor.tatai/.rbenv/versions/1.8.7-p374/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Move::BoxesController#index (for 127.0.0.1 at 2013-12-06 09:12:01) [GET]
+  [4;36;1mMove::Box Load (0.2ms)[0m   [0;1mSELECT * FROM `boxes` [0m
+Rendering template within layouts/application
+Rendering move/boxes/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/move/boxes]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Move::BoxesController#index (for 127.0.0.1 at 2013-12-06 09:13:04) [GET]
+  [4;35;1mMove::Box Load (0.2ms)[0m   [0mSELECT * FROM `boxes` [0m
+Rendering template within layouts/application
+Rendering move/boxes/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/move/boxes]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Move::BoxesController#index (for 127.0.0.1 at 2013-12-06 09:13:37) [GET]
+  [4;36;1mMove::Box Load (0.2ms)[0m   [0;1mSELECT * FROM `boxes` [0m
+Rendering template within layouts/application
+Rendering move/boxes/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/move/boxes]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Move::BoxesController#index (for 127.0.0.1 at 2013-12-06 09:26:06) [GET]
+  [4;35;1mMove::Box Load (0.2ms)[0m   [0mSELECT * FROM `boxes` [0m
+Rendering template within layouts/application
+Rendering move/boxes/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/move/boxes]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Move::BoxesController#index (for 127.0.0.1 at 2013-12-06 09:26:23) [GET]
+  [4;36;1mMove::Box Load (0.2ms)[0m   [0;1mSELECT * FROM `boxes` [0m
+Rendering template within layouts/application
+Rendering move/boxes/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/move/boxes]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Move::BoxesController#index (for 127.0.0.1 at 2013-12-06 09:27:11) [GET]
+  [4;35;1mMove::Box Load (0.2ms)[0m   [0mSELECT * FROM `boxes` [0m
+Rendering template within layouts/application
+Rendering move/boxes/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/move/boxes]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Move::BoxesController#index (for 127.0.0.1 at 2013-12-06 09:27:24) [GET]
+  [4;36;1mMove::Box Load (0.2ms)[0m   [0;1mSELECT * FROM `boxes` [0m
+Rendering template within layouts/application
+Rendering move/boxes/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/move/boxes]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Move::BoxesController#index (for 127.0.0.1 at 2013-12-06 09:27:32) [GET]
+  [4;35;1mMove::Box Load (0.2ms)[0m   [0mSELECT * FROM `boxes` [0m
+Rendering template within layouts/application
+Rendering move/boxes/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/move/boxes]

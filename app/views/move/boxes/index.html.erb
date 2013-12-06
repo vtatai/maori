@@ -1,0 +1,18 @@
+<h2>Boxes being Shipped</h2>
+<table class="items_datatable"> 
+  <thead> 
+    <tr> 
+      <th>ID</th> 
+      <th>Description</th> 
+    </tr> 
+  </thead>
+  <tbody>
+    <% @boxes.each do |box| %>
+      <tr>
+        <td><%= box.id %></td>
+        <td><%= box.description %></td>
+      </tr>
+    <% end %>
+    <%= 'NO BOXES' if @boxes.empty? %>
+  </tbody>
+</table>

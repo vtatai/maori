@@ -1,0 +1,2 @@
+module Move::BoxesHelper
+end
