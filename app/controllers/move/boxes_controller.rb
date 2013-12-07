@@ -1,6 +1,9 @@
 module Move
   class BoxesController < ActionController::Base
+    USERNAME, PASSWORD = 'tatai', '6f80ffffdc48972f6e1244e73edbadca50b9ad7a'
+
     layout 'application'
+    before_filter :authorize, :except => [:show]
 
     def index
       @boxes = Box.all
@@ -40,6 +43,13 @@ module Move
       @box = Box.find(params[:id])
       @box.destroy
       redirect_to :move_boxes
+    end
+
+    private
+    def authorize
+       authenticate_or_request_with_http_basic do |username, password| 
+         username == USERNAME && Digest::SHA1.hexdigest(password) == PASSWORD 
+       end 
     end
   end
 end
