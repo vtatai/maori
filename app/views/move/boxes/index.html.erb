@@ -3,25 +3,26 @@
   <thead> 
     <tr> 
       <th>ID</th> 
+      <th>Status</th> 
+      <th>Post Date</th> 
+      <th>Tracking Code</th> 
       <th>Description</th> 
+      <th>Actions</th> 
     </tr> 
   </thead>
   <tbody>
     <% @boxes.each do |box| %>
       <tr>
         <td><%= link_to box.id, move_box_path(box) %></td>
+        <td><%= box.status %></td>
+        <td><%= box.post_date %></td>
+        <td><%= box.tracking_code %></td>
         <td><%= box.description %></td>
-        <td><%= link_to 'Edit', edit_move_box_path(box), :class => 'glyphicon glyphicon-edit' %></td>
+        <td><%= link_to 'Edit', edit_move_box_path(box), :class => 'glyphicon glyphicon-edit' %>
+          <%= link_to 'Remove', move_box_path(box), :class => 'glyphicon glyphicon-remove-circle', :method => :delete %></td>
       </tr>
     <% end %>
-    <%= 'NO BOXES' if @boxes.empty? %>
   </tbody>
 </table>
 
 <%= link_to 'New Box', new_move_box_path, :class => 'btn btn-primary' %>
-
-<script language="javascript" type="text/javascript">
-  $(document).ready(function() {
-    $('.datatable').dataTable();
-  });
-</script> 

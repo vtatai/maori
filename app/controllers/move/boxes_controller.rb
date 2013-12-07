@@ -17,7 +17,7 @@ module Move
     def create
       @box = Box.new(params[:move_box])
       if @box.save
-        redirect_to @box
+        redirect_to :move_boxes
       else
         render :action => 'new'
       end
@@ -34,6 +34,12 @@ module Move
       else
         redirect_to :edit
       end
+    end
+
+    def destroy
+      @box = Box.find(params[:id])
+      @box.destroy
+      redirect_to :move_boxes
     end
   end
 end

@@ -6,6 +6,7 @@
     <!-- Bootstrap -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/datatables.css" rel="stylesheet">
+    <link href="/css/datepicker.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -15,18 +16,8 @@
     <![endif]-->
   </head>
   <body>
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/datatables/1.9.4/jquery.dataTables.min.js"></script>
-    <script src="/js/datatables.js"></script>
-
     <div class="bs-callout bs-callout-info">
-      <h4>This page contains information on all packages being shipped for our moving from Joao Pessoa - Brazil to San Francisco - US</h4>
+      <h4>This page contains information on all packages being shipped for our move from Joao Pessoa - Brazil to San Francisco - US</h4>
       <h4>For further information contact: vtatai@gmail.com, or vtatai on Skype, Twitter</h4>
     </div>
 
@@ -35,5 +26,19 @@
       <%= yield %>
 
     </div> <!-- /container -->
+
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/datatables/1.9.4/jquery.dataTables.min.js"></script>
+    <script src="/js/datatables.js"></script>
+    <script src="/js/bootstrap-datepicker.js"></script>
+
+    <script language="javascript" type="text/javascript">
+      $(document).ready(function() {
+        $('.datatable').dataTable();
+        $('.datepicker').datepicker();
+      });
+    </script> 
   </body>
 </html>

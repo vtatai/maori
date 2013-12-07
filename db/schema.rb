@@ -9,12 +9,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131206111445) do
+ActiveRecord::Schema.define(:version => 20131207124230) do
 
   create_table "boxes", :force => true do |t|
-    t.string   "description"
+    t.string   "description",                         :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "tracking_code"
+    t.datetime "post_date"
+    t.string   "status",        :default => "PACKED", :null => false
   end
 
 end
